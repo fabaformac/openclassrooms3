@@ -1,0 +1,308 @@
+/* FONT */
+
+@font-face {
+
+    font-family: 'BallparkWeiner';
+    src: url('tp_images_polices/polices/ballpark.eot');
+    src: url('tp_images_polices/polices/polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('tp_images_polices/polices/polices/ballpark.woff') format('woff'),
+         url('tp_images_polices/polices/polices/ballpark.ttf') format('truetype'),
+         url('tp_images_polices/polices/polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: 'Dayrom';
+    src: url('tp_images_polices/polices/polices/dayrom.eot');
+    src: url('tp_images_polices/polices/polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('tp_images_polices/polices/polices/dayrom.woff') format('woff'),
+         url('tp_images_polices/polices/polices/dayrom.ttf') format('truetype'),
+         url('tp_images_polices/polices/polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+/* BODY */
+
+body {
+    background: url(tp_images_polices/images/fond_jaune.png);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#container {
+    width: 900px;
+    margin: auto;
+}
+
+@media all and (max-width: 1024px) {
+    #container {
+        width: auto;
+    }
+}
+
+/* UPPERCASE */
+
+nav, h2, h3 {
+    text-transform: uppercase;
+    font-family: Dayrom, serif;
+}
+
+/* LIST */
+
+li {
+    list-style-type: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+/* HEADER*/
+
+header {
+    background: url('tp_images_polices/images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header h2 {
+    font-weight: normal;
+    text-transform: none;
+    margin-top: 0;
+}
+
+h1 {
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    margin: 0 0 0 10px;
+
+}
+
+#main_title {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo_img {
+    width: 60px;
+    height: 60px;
+}
+
+/*NAV*/
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-right: 15px;
+    font-size: 1.3rem;
+
+}
+
+nav a:hover {
+    color: red;
+    border-bottom: solid;
+}
+
+@media all and (max-width: 1024px) {
+    nav {
+        width: auto;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        padding-left: 4px;
+    }
+
+    nav a:hover {
+        border-bottom: 0;
+    }
+
+}
+
+/* IMAGE SAN FRANCISCO */
+
+#banner_img {
+    background: url('tp_images_polices/images/sanfrancisco.jpg') no-repeat;
+    border-radius: 7px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+
+#banner_description {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    width: 99.45%;
+    height: 30px;
+    padding-left: 5px;
+    padding-top: 10px;
+    background-color:rgba (24,24,24,24,0.8);
+    border-radius: 0px 0px 7px 7px;
+
+}
+
+@media all and (max-width: 1024px) {
+    #banner_img {
+        display: none;
+    } 
+}
+
+.button {
+    height: 7px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 7px 7px 15px 7px;
+    position: absolute;
+    background: url('tp_images_polices/images/fond_degraderouge.png');
+    text-align: center;
+    right: 5px;
+    bottom: 5px;
+}
+
+
+/* JE SUIS UN GRAND VOYAGEUR */
+
+section {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.pin {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+article {
+    text-align: justify;
+    margin-right: 25px;
+    flex:3;
+
+}
+
+.redword {
+    color: red;
+    text-decoration: underline;
+}
+
+/* A PROPOS DE L'AUTEUR */
+
+aside {
+    color: white;
+    font-size: 0.7em;
+    border-radius: 7px;
+    background-color:slategray;
+    padding: 10px;
+    text-align: justify; 
+    position: relative;
+    flex:1.2;
+    margin-bottom: 200px;
+    margin-top: 20px;
+    
+}
+
+#img_zozor img{
+    border: 1px solid black;
+}
+
+#img_zozor {
+    text-align: center;
+}
+
+
+#triangle {
+    position:absolute;
+    top: 100px;
+    left: -12px;
+}
+
+.last_paragraph {
+    padding-bottom: 40px;
+}
+
+aside img {
+    margin-right: 4px;
+}
+
+@media all and (max-width: 1024px) {
+    section {
+        flex-direction: column;
+    }
+
+    article, aside {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    #triangle {
+        display: none;
+    }
+
+    #img_zozor img {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+    }
+    
+    aside p:last-child {
+        text-align: center;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    background: url('tp_images_polices/images/ico_top.png') no-repeat top center, url('tp_images_polices/images/separateur.png') repeat-x top, url('tp_images_polices/images/ombre.png') repeat-x top;
+    padding-top: 30px;
+   
+}
+
+#tweet {
+    width: 30%;   
+}
+
+#friends {
+    width: 35%;
+}
+
+#photos {
+    width: 40%;
+    margin-left: 20px;
+}
+
+#photos img {
+    border: 1px solid black;
+}
+
+#friends_list {
+    display: flex;
+    justify-content: space-between;  
+   
+}
+
+#friends ul {
+    list-style-image: url('tp_images_polices/images/ico_liensexterne.png');
+    padding-left: 2px;
+    margin-top: 0;
+}
